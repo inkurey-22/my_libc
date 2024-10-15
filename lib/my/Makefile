@@ -41,7 +41,7 @@ SRC =	my_putchar.c					\
 		my_isneg.c						\
 		my_show_word_array.c
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(SRC:.c=obj/.o)
 
 NAME = libmy.a
 
@@ -54,6 +54,10 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	cp my_libc.h ../../include/
+
+obj/%.o: %.c
+    @mkdir -p obj
+    $(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
