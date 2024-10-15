@@ -41,9 +41,7 @@ char **split_string(char const *str, char const *delim)
     char **tab = malloc(sizeof(char *) * (wcount + 1));
     int i = 0;
     int start = 0;
-    
-    if (tab == NULL || delim == NULL)
-        return NULL;
+
     for (int j = 0; j < wcount; j++){
         while (isdelim(str[i], delim))
             i++;
