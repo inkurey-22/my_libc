@@ -81,7 +81,7 @@ $(OBJ_DIR)/%.o: %.c
 	@$(CC) -c $< -o $@ $(CFLAGS)
 
 clean:
-	@rm -f $(OBJ)
+	@rm -rf $(OBJ_DIR)
 
 fclean: clean
 	@rm -f $(NAME)
