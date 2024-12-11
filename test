@@ -5,16 +5,16 @@ is_new_branch() {
     git rev-parse --abbrev-ref HEAD | grep -q 'HEAD'
 }
 
-# Ask for the files to include in the commit
+# Ask for the files to include in the commit with auto-completion
 echo "Enter the files you want to include in the commit (space-separated):"
-read -a files
+read -e -a files
 
 # Add the specified files to the staging area
 git add "${files[@]}"
 
 # Ask for the commit message
 echo "Enter the commit message:"
-read commit_message
+read -e commit_message
 
 # Commit the changes
 git commit -m "$commit_message"
@@ -29,4 +29,3 @@ else
 fi
 
 echo "Changes have been committed and pushed."
-
