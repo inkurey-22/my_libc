@@ -35,6 +35,7 @@ typedef struct printf_s {
 int my_printf(char const *, ...);
 int my_sprintf(char *, char const *, ...);
 int my_dprintf(int, char const *, ...);
+void put_buffer(buffer_t *, int);
 
 // Specifier management
 void manage_specifiers(char, va_list, buffer_t *, format_t *);
@@ -59,6 +60,7 @@ char *printf_pointer(void *);
 int number_len(int);
 void printf_n_spec(int *, buffer_t *);
 void printf_tab(char **, buffer_t *);
+void parse_format(char const *, int *, format_t *, va_list);
 
 // Linkers
 void print_char(va_list, buffer_t *, format_t *);

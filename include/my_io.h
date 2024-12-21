@@ -10,7 +10,7 @@
 
 void my_putchar(char);
 void my_putstr(char const *);
-int my_put_nbr(int);
+int my_putnbr(int);
 void my_puterr(char const *);
 int my_show_word_array(char *const *);
 

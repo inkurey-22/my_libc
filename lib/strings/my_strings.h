@@ -22,6 +22,8 @@ char *my_strncpy(char *, char const *, int n);
 char *my_revstr(char *);
 char *my_strstr(char *, char const *);
 char *my_strdup(char const *);
+char *my_strchr(char *, char);
+char *my_strrchr(char *, char);
 char **split_string(char const *, char const *);
 
 // String Case Functions
