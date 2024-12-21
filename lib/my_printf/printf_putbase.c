@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include "my_printf.h"
-#include "my_strings.h"
+#include "../strings/my_strings.h"
 
 char hex_char(long entier)
 {

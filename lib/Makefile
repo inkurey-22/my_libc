@@ -65,6 +65,7 @@ SRC 	=   io/my_putnbr.c                   \
             strings/my_strstr.c              \
             strings/my_strupcase.c           \
             strings/my_strchr.c              \
+            strings/my_revstr.c              \
             strings/split_string.c           \
 
 INCLUDES=   io/my_io.h	      \
