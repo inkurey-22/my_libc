@@ -44,7 +44,8 @@ SRC 	=   io/my_putnbr.c                   \
             numbers/my_compute_power_rec.c   \
             numbers/my_compute_square_root.c \
             numbers/my_find_prime_sup.c      \
-            numbers/my_getnbr.c              \
+            numbers/my_atoi.c                \
+			numbers/my_atof.c                \
             numbers/my_isneg.c               \
             numbers/my_is_prime.c            \
             strings/my_str_isalpha.c         \
